@@ -26,10 +26,15 @@ namespace Lesson7
             {
                 Random target = new Random();
                 int targetNumber = target.Next(10, 101);
-                MessageBox.Show("Доберись до числа", $"{targetNumber}");
+                MessageBox.Show("Доберись за минимальное количество ходов до числа", $"{targetNumber}");
                 counterControl1.Controls["panel1"].Controls["btnCommand1"].Enabled = true;
                 counterControl1.Controls["panel1"].Controls["btnCommand2"].Enabled = true;
             }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

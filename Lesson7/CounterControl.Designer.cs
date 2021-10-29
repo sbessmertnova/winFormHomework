@@ -49,7 +49,7 @@ namespace Lesson7
             this.panel1.Controls.Add(this.btnCommand1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(600, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 962);
             this.panel1.TabIndex = 0;
@@ -59,20 +59,21 @@ namespace Lesson7
             this.btnCancelTurn.BackColor = System.Drawing.SystemColors.Info;
             this.btnCancelTurn.Enabled = false;
             this.btnCancelTurn.Location = new System.Drawing.Point(6, 508);
-            this.btnCancelTurn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCancelTurn.Margin = new System.Windows.Forms.Padding(6);
             this.btnCancelTurn.Name = "btnCancelTurn";
             this.btnCancelTurn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnCancelTurn.Size = new System.Drawing.Size(388, 154);
             this.btnCancelTurn.TabIndex = 3;
             this.btnCancelTurn.Text = "Отмена хода";
             this.btnCancelTurn.UseVisualStyleBackColor = false;
+            this.btnCancelTurn.Click += new System.EventHandler(this.btnCancelTurn_Click);
             // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.Info;
             this.btnReset.Enabled = false;
             this.btnReset.Location = new System.Drawing.Point(6, 342);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(6);
             this.btnReset.Name = "btnReset";
             this.btnReset.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnReset.Size = new System.Drawing.Size(388, 154);
@@ -86,7 +87,7 @@ namespace Lesson7
             this.btnCommand2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnCommand2.Enabled = false;
             this.btnCommand2.Location = new System.Drawing.Point(6, 177);
-            this.btnCommand2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCommand2.Margin = new System.Windows.Forms.Padding(6);
             this.btnCommand2.Name = "btnCommand2";
             this.btnCommand2.Size = new System.Drawing.Size(388, 154);
             this.btnCommand2.TabIndex = 1;
@@ -99,7 +100,7 @@ namespace Lesson7
             this.btnCommand1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCommand1.Enabled = false;
             this.btnCommand1.Location = new System.Drawing.Point(6, 12);
-            this.btnCommand1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCommand1.Margin = new System.Windows.Forms.Padding(6);
             this.btnCommand1.Name = "btnCommand1";
             this.btnCommand1.Size = new System.Drawing.Size(388, 154);
             this.btnCommand1.TabIndex = 0;
@@ -160,7 +161,7 @@ namespace Lesson7
             this.Controls.Add(this.labelTextSum);
             this.Controls.Add(this.labelSum);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CounterControl";
             this.Size = new System.Drawing.Size(1000, 962);
             this.panel1.ResumeLayout(false);

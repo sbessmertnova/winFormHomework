@@ -51,7 +51,7 @@ namespace Lesson7
             this.tableLayoutPanel1.Controls.Add(this.counterControl1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -59,16 +59,17 @@ namespace Lesson7
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1292, 1160);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // toolStripContainer1
             // 
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(6);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(134, 46);
             this.toolStripContainer1.Location = new System.Drawing.Point(6, 6);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(6);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(134, 86);
             this.toolStripContainer1.TabIndex = 0;
@@ -96,7 +97,7 @@ namespace Lesson7
             this.игратьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.игратьToolStripMenuItem1});
             this.игратьToolStripMenuItem.Name = "игратьToolStripMenuItem";
-            this.игратьToolStripMenuItem.Size = new System.Drawing.Size(88, 38);
+            this.игратьToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
             this.игратьToolStripMenuItem.Text = "Игра";
             // 
             // игратьToolStripMenuItem1
@@ -109,7 +110,7 @@ namespace Lesson7
             // counterControl1
             // 
             this.counterControl1.Location = new System.Drawing.Point(158, 110);
-            this.counterControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.counterControl1.Margin = new System.Windows.Forms.Padding(12);
             this.counterControl1.Name = "counterControl1";
             this.counterControl1.Size = new System.Drawing.Size(976, 938);
             this.counterControl1.TabIndex = 1;
@@ -120,7 +121,7 @@ namespace Lesson7
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1292, 1160);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Udvoitel";
             this.Text = "Удвоитель";
             this.tableLayoutPanel1.ResumeLayout(false);
