@@ -15,6 +15,21 @@ namespace Lesson7
         public Udvoitel()
         {
             InitializeComponent();
+            this.Text = "Удвоитель";
+        }
+
+        private void игратьToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var sum = int.Parse(counterControl1.Controls["labelSum"].Text);
+            var commandCount = int.Parse(counterControl1.Controls["labelCommandCount"].Text);
+            if (!(sum>1&&commandCount>0))
+            {
+                Random target = new Random();
+                int targetNumber = target.Next(10, 101);
+                MessageBox.Show("Доберись до числа", $"{targetNumber}");
+                counterControl1.Controls["panel1"].Controls["btnCommand1"].Enabled = true;
+                counterControl1.Controls["panel1"].Controls["btnCommand2"].Enabled = true;
+            }
         }
     }
 }
