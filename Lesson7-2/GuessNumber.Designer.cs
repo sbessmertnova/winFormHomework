@@ -62,16 +62,18 @@ namespace Lesson7_2
             // GuessNumberHeaderLabel
             // 
             this.GuessNumberHeaderLabel.AutoSize = true;
-            this.GuessNumberHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuessNumberHeaderLabel.Font = new System.Drawing.Font("Ravie", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuessNumberHeaderLabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.GuessNumberHeaderLabel.Location = new System.Drawing.Point(260, 0);
             this.GuessNumberHeaderLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.GuessNumberHeaderLabel.Name = "GuessNumberHeaderLabel";
-            this.GuessNumberHeaderLabel.Size = new System.Drawing.Size(365, 63);
+            this.GuessNumberHeaderLabel.Size = new System.Drawing.Size(860, 142);
             this.GuessNumberHeaderLabel.TabIndex = 0;
             this.GuessNumberHeaderLabel.Text = "Угадай число";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.GuessedNumberResultLabel);
             this.panel1.Controls.Add(this.CheckGuessedNumberButton);
             this.panel1.Controls.Add(this.GuessedNumberTextLabel);
@@ -96,7 +98,8 @@ namespace Lesson7_2
             // CheckGuessedNumberButton
             // 
             this.CheckGuessedNumberButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.CheckGuessedNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckGuessedNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckGuessedNumberButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CheckGuessedNumberButton.Location = new System.Drawing.Point(346, 6);
             this.CheckGuessedNumberButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CheckGuessedNumberButton.Name = "CheckGuessedNumberButton";

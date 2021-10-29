@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Бессмертнова
 namespace Lesson7
 {
     public partial class Udvoitel : Form

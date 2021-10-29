@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Бессмертнова
 namespace Lesson7_2
 {
     public partial class Form1 : Form

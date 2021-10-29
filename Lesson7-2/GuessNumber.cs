@@ -36,6 +36,7 @@ namespace Lesson7_2
                 numberOfAttempts++;
                 if (number == computerNumber)
                 {
+                    GuessedNumberResultLabel.ForeColor = Color.Red;
                     GuessedNumberResultLabel.Text = $"ВЫ ВЫИГРАЛИ! \nКОМПЬЮТЕР ЗАГАДАЛ ЧИСЛО {computerNumber}. \nКОЛИЧЕСТВО ПОПЫТОК: {numberOfAttempts}";
                 }
                 else if (number<computerNumber)
