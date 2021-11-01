@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace TrueFalseEditor
@@ -35,7 +36,24 @@ namespace TrueFalseEditor
         /// <returns>Вопрос</returns>
         public Question this[int index]
         {
-            get { return list[index]; }
+            get {
+                if (index>0&&index<list.Count)
+                {
+                    return list[index];
+                }
+                else
+                {
+                    MessageBox.Show($"Вы пытаетесь получить {index+1} элемент из массива, состоящего из {list.Count} элементов", "Получение вопроса по индексу", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+            }
+        }
+        /// <summary>
+        /// получить список вопросов
+        /// </summary>
+        public List<Question> Questions
+        {
+            get => list;
         }
 
         /// <summary>
@@ -56,8 +74,14 @@ namespace TrueFalseEditor
             this.fileName = fileName;
             list = new List<Question>();
         }
+        public TrueFalseDatabase(string fileName, List<Question> list)
+        {
+            this.fileName = fileName;
+            this.list = list;
+        }
 
         #endregion
+
 
         #region Public Methods
 
@@ -85,6 +109,12 @@ namespace TrueFalseEditor
         /// </summary>
         public void Load()
         {
+            var info = new FileInfo(fileName);
+            if (info.Length> 1e+8)
+            {
+                MessageBox.Show("Файл не должен превышать 100мб", "Открытие файла", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Question>));
             FileStream fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             list = (List<Question>)xmlSerializer.Deserialize(fileStream);

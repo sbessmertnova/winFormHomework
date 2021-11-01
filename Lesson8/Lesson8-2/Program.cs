@@ -8,6 +8,8 @@ namespace Lesson8_2
 {
     static class Program
     {
+        //Задание 2. Создайте простую форму на котором свяжите свойство Text элемента TextBox
+        //со свойством Value элемента NumericUpDown.
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

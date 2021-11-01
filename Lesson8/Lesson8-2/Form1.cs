@@ -16,5 +16,18 @@ namespace Lesson8_2
         {
             InitializeComponent();
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void text_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(text.Text, out var number))
+            {
+                numericUpDown1.Value = number;
+            }
+        }
     }
 }
