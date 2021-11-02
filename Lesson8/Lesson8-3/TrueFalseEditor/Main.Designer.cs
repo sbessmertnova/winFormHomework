@@ -53,19 +53,21 @@ namespace TrueFalseEditor
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1250, 42);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(724, 33);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripDropDownButton1
             // 
+            this.toolStripDropDownButton1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newMenuItem,
@@ -74,59 +76,74 @@ namespace TrueFalseEditor
             this.saveAsToolStripMenuItem,
             this.toolStripSeparator1,
             this.exitMenuItem});
+            this.toolStripDropDownButton1.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripDropDownButton1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(74, 36);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(50, 30);
             this.toolStripDropDownButton1.Text = "File";
             // 
             // newMenuItem
             // 
+            this.newMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.newMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.newMenuItem.Name = "newMenuItem";
-            this.newMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.newMenuItem.Size = new System.Drawing.Size(180, 26);
             this.newMenuItem.Text = "New";
             this.newMenuItem.Click += new System.EventHandler(this.newMenuItem_Click);
             // 
             // openMenuItem
             // 
+            this.openMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.openMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.openMenuItem.Name = "openMenuItem";
-            this.openMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.openMenuItem.Size = new System.Drawing.Size(180, 26);
             this.openMenuItem.Text = "Open";
             this.openMenuItem.Click += new System.EventHandler(this.openMenuItem_Click);
             // 
             // saveMenuItem
             // 
+            this.saveMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.saveMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
             this.saveMenuItem.Text = "Save";
             this.saveMenuItem.Click += new System.EventHandler(this.saveMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
+            this.saveAsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.saveAsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.saveAsToolStripMenuItem.Text = "Save as...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(356, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitMenuItem
             // 
+            this.exitMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.exitMenuItem.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.exitMenuItem.Size = new System.Drawing.Size(180, 26);
             this.exitMenuItem.Text = "Exit";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
             // toolStripButton1
             // 
+            this.toolStripButton1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripButton1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(168, 36);
+            this.toolStripButton1.Size = new System.Drawing.Size(102, 30);
             this.toolStripButton1.Text = "О программе";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -139,19 +156,19 @@ namespace TrueFalseEditor
             this.panel1.Controls.Add(this.removeButton);
             this.panel1.Controls.Add(this.addButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 652);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Location = new System.Drawing.Point(0, 421);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1250, 127);
+            this.panel1.Size = new System.Drawing.Size(724, 66);
             this.panel1.TabIndex = 1;
             // 
             // nudNumber
             // 
             this.nudNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudNumber.Location = new System.Drawing.Point(928, 42);
-            this.nudNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.nudNumber.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudNumber.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.nudNumber.Location = new System.Drawing.Point(551, 21);
             this.nudNumber.Name = "nudNumber";
-            this.nudNumber.Size = new System.Drawing.Size(168, 31);
+            this.nudNumber.Size = new System.Drawing.Size(84, 33);
             this.nudNumber.TabIndex = 4;
             this.nudNumber.ValueChanged += new System.EventHandler(this.nudNumber_ValueChanged);
             // 
@@ -159,67 +176,73 @@ namespace TrueFalseEditor
             // 
             this.cbTrue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTrue.AutoSize = true;
-            this.cbTrue.Location = new System.Drawing.Point(1138, 44);
-            this.cbTrue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cbTrue.BackColor = System.Drawing.Color.Gray;
+            this.cbTrue.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTrue.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cbTrue.Location = new System.Drawing.Point(650, 22);
             this.cbTrue.Name = "cbTrue";
-            this.cbTrue.Size = new System.Drawing.Size(88, 29);
+            this.cbTrue.Size = new System.Drawing.Size(62, 30);
             this.cbTrue.TabIndex = 3;
             this.cbTrue.Text = "True";
-            this.cbTrue.UseVisualStyleBackColor = true;
+            this.cbTrue.UseVisualStyleBackColor = false;
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(348, 37);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.updateButton.BackColor = System.Drawing.Color.Gray;
+            this.updateButton.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.updateButton.Location = new System.Drawing.Point(174, 19);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(150, 44);
+            this.updateButton.Size = new System.Drawing.Size(75, 35);
             this.updateButton.TabIndex = 2;
             this.updateButton.Text = "Update";
-            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.UseVisualStyleBackColor = false;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(186, 37);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.removeButton.BackColor = System.Drawing.Color.Gray;
+            this.removeButton.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.removeButton.Location = new System.Drawing.Point(93, 19);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(150, 44);
+            this.removeButton.Size = new System.Drawing.Size(75, 35);
             this.removeButton.TabIndex = 1;
             this.removeButton.Text = "Remove";
-            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.UseVisualStyleBackColor = false;
             this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(24, 37);
-            this.addButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addButton.BackColor = System.Drawing.Color.Gray;
+            this.addButton.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.addButton.Location = new System.Drawing.Point(12, 19);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(150, 44);
+            this.addButton.Size = new System.Drawing.Size(75, 35);
             this.addButton.TabIndex = 0;
             this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // tbQuestion
             // 
             this.tbQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbQuestion.Location = new System.Drawing.Point(0, 42);
-            this.tbQuestion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbQuestion.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQuestion.Location = new System.Drawing.Point(0, 33);
             this.tbQuestion.Multiline = true;
             this.tbQuestion.Name = "tbQuestion";
-            this.tbQuestion.Size = new System.Drawing.Size(1250, 610);
+            this.tbQuestion.Size = new System.Drawing.Size(724, 388);
             this.tbQuestion.TabIndex = 2;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 779);
+            this.ClientSize = new System.Drawing.Size(724, 487);
             this.Controls.Add(this.tbQuestion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrueFalseEditor";
